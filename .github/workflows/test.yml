@@ -33,5 +33,6 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
           cache: 'maven'
+      # Run tests with Maven
       - name: Run tests
         run: mvn test
