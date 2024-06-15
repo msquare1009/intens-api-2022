@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Praksa2022Application {
 
 	public static void main(String[] args) {
-		System.out.println("Revision 0");
+		// Added log for testing pull requests
+		System.out.println("Revision 1");
 		SpringApplication.run(Praksa2022Application.class, args);
 	}
 
