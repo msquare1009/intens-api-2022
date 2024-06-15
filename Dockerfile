@@ -1,3 +1,5 @@
+# Two stage build
+# Stage 1: install Maven, test and package
 FROM openjdk:alpine AS builder
 
 WORKDIR /app
@@ -12,7 +14,7 @@ RUN \
     # Package
     && mvn package
 
-# Stage 2
+# Stage 2: copy .jar
 FROM openjdk:alpine
 
 ENV PORT=8080

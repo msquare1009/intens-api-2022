@@ -16,3 +16,13 @@ https://docs.github.com/en/actions/automating-builds-and-tests/building-and-test
 1. Java 8 https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
 2. Eclipse / IntelliJ / Alat po izboru
 3. Docker https://www.docker.com/products/docker-desktop
+
+
+---
+
+# Komentar
+Dodala sam Dockerfile i docker-compose.yml radi lakšeg pokretanja kontejnera.
+Dodala sam tri workflow fajla - dva tražena u zadatku, i jedan koji se pokreće manuelno radi lakšeg testiranja i radi isto što i prethodna dva.
+Test workflow builduje projekat i pokreće testove.
+Build & deploy workflow builduje projekat, ekstrahuje verziju builda i pushuje image na Dockerhub repozitorij (https://hub.docker.com/repository/docker/msquare1009/intens/general).
+Dodala sam i Kubernetes deployment i servis yaml fajlove iako nisam setupovala Kubernetes.
